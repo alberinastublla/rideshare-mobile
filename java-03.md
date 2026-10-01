@@ -1,13 +1,24 @@
-# Raporti - Java 3
+# RideShare — Java 3
 
-## Prova 1: Lista e udhëtimeve në telefon
-- Hapat: Hapa faqen kryesore në shfletues dhe e provova në pamjen e telefonit.
-- Rezultati real: Faqja shfaq saktësisht 3 kartat e udhëtimeve dhe nuk ka scroll horizontal.
+## Çfarë ndërtova
+Ndërtova listën me tri udhëtime fiktive, kartën e ripërdorshme, faqen e detajeve, kërkesën demonstrative, mesazhin për udhëtimin që nuk u gjet dhe stilet bazë për telefon.
 
-## Prova 2: Detajet dhe udhëtimi i panjohur
-- Hapat: Klikova te karta 2, kontrollova kartën 3 dhe provova adresën /udhetimi/99.
-- Rezultati real: Karta 2 shfaq vendtakimin Te stacioni kryesor, karta 3 ka butonin e çaktivizuar, ndërsa adresa /udhetimi/99 shfaq Udhëtimi nuk u gjet.
+## Provat që bëra
 
-## Prova 3: Kërkesa dhe kthimi mbrapa
-- Hapat: Klikova butonin Kërko vend te karta e parë dhe provova kthimin mbrapa.
-- Rezultati real: Shfaqet faqja me mesazhin Simulim: Në pritje dhe butonat e kthimit funksionojnë saktë.
+### Prova 1: Lista në telefon
+- **Hapat:** Kontrollova faqen kryesore lokale.
+- **Rezultati real:** U përgjigj me kodin 200 dhe përmbante saktësisht tri karta; CSS e shfaq listën në një kolonë si parazgjedhje.
+
+### Prova 2: Detajet e udhëtimit të dytë
+- **Hapat:** Hapa /udhetimi/2, /udhetimi/3 dhe /udhetimi/99.
+- **Rezultati real:** Faqja /udhetimi/2 u përgjigj me kodin 200 dhe shfaqi vendtakimin "Te stacioni kryesor". Te /udhetimi/3 u shfaq "Nuk ka vende të lira", ndërsa /udhetimi/99 u përgjigj me kodin 404 dhe mesazhin "Udhëtimi nuk u gjet".
+
+### Prova 3: Kërkesa në pritje
+- **Hapat:** Hapa /udhetimi/2/kerkesa dhe kontrollova lidhjet e kthimit.
+- **Rezultati real:** Faqja u përgjigj me kodin 200 dhe shfaqi "Simulim: Në pritje". Lidhja e kthimit te detajet është në faqe; nga detajet ka lidhje për t'u kthyer te lista.
+
+## Çfarë do të përmirësoj
+Do ta provoj pamjen dhe prekjen e lidhjeve në emulimin e telefonit me një koleg, sepse këtu verifikova përgjigjet lokale të faqeve, jo ndërveprimin në pajisje.
+
+## Ndihma nga AI
+AI më ndihmoi t'i vendos skedarët sipas shembullit të ushtrimit; kontrollova vetë ndërtimin dhe përgjigjet e faqeve lokale me ESLint, Next.js build dhe kërkesa HTTP.
