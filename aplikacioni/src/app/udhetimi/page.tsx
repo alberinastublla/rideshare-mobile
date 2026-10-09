@@ -1,1 +1,0 @@
-import { lexoUdhetimin, type Udhetim } from "../../lib/udhetimet";
