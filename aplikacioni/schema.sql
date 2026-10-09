@@ -1,5 +1,3 @@
--- Skedari: schema.sql (brenda aplikacionit, pranë package.json)
--- Të dhëna fiktive për laboratorin; ekzekutohet në Neon SQL Editor.
 CREATE TABLE IF NOT EXISTS udhetimet (
   id TEXT PRIMARY KEY,
   nisja TEXT NOT NULL,
@@ -17,10 +15,3 @@ VALUES
 ON CONFLICT (id) DO NOTHING;
 
 SELECT * FROM udhetimet ORDER BY id;
-```[cite: 4]
-
----
-
-### Si ta vendosësh:
-1. Ruaje këtë kod te skedari **`schema.sql`** që ndodhet **brenda dosjes `aplikacioni`** (pranë `package.json`)[cite: 4].
-2. Të njëjtin kod mund ta kopjosh dhe ta ekzekutosh edhe në **Neon Console $\rightarrow$ SQL Editor** kur të bësh lidhjen e databazës[cite: 4].
