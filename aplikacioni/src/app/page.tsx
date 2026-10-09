@@ -1,7 +1,6 @@
-import { KartaUdhetimi } from "@/components/KartaUdhetimi";
+ï»¿import { KartaUdhetimi } from "@/components/KartaUdhetimi";
 import { lexoUdhetimet, type Udhetim } from "@/lib/udhetimet";
 
-// Lexo bazën përsëri në çdo kërkesë për këtë faqe.
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
@@ -12,18 +11,18 @@ export default async function Home() {
     return (
       <main>
         <h1>RideShare</h1>
-        <p role="alert">Nuk u lidhëm me databazën. Provo përsëri.</p>
-        <a className="action" href="/">Provo përsëri</a>
+        <p role="alert">Nuk u lidhÃ«m me databazÃ«n. Provo pÃ«rsÃ«ri.</p>
+        <a className="action" href="/">Provo pÃ«rsÃ«ri</a>
       </main>
     );
   }
 
   return (
     <main>
-      <h1>RideShare · Udhëtimet për AAB</h1>
-      <p>Burimi: Neon · të dhëna fiktive për ushtrime</p>
+      <h1>RideShare Â· UdhÃ«timet pÃ«r AAB</h1>
+      <p>Burimi: Neon Â· tÃ« dhÃ«na fiktive pÃ«r ushtrime</p>
       {udhetimet.length === 0 ? (
-        <p>Nuk ka udhëtime për momentin.</p>
+        <p>Nuk ka udhÃ«time pÃ«r momentin.</p>
       ) : (
         <div className="trip-list">
           {udhetimet.map((udhetim) => (

@@ -15,7 +15,7 @@ export default async function Kerkesa({
     return (
       <main>
         <h1>RideShare</h1>
-        <p role="alert">Nuk u lidhëm me databazën. Provo përsëri.</p>
+        <p role="alert">Nuk u lidhï¿½m me databazï¿½n. Provo pï¿½rsï¿½ri.</p>
         <Link href="/">? Kthehu te lista</Link>
       </main>
     );
@@ -27,11 +27,11 @@ export default async function Kerkesa({
       <Link href={/udhetimi/\}>? Kthehu te detajet</Link>
       {udhetim.vende > 0 ? (
         <>
-          <h1>Simulim: Në pritje</h1>
-          <p>Kërkesa për {udhetim.nisja} nuk është dërguar te shoferi.</p>
-          <p>Ruajtjen dhe konfirmimin real do t’i shtojmë më vonë.</p>
+          <h1>Simulim: Nï¿½ pritje</h1>
+          <p>Kï¿½rkesa pï¿½r {udhetim.nisja} nuk ï¿½shtï¿½ dï¿½rguar te shoferi.</p>
+          <p>Ruajtjen dhe konfirmimin real do tï¿½i shtojmï¿½ mï¿½ vonï¿½.</p>
         </>
-      ) : <h1>Nuk ka vende të lira.</h1>}
+      ) : <h1>Nuk ka vende tï¿½ lira.</h1>}
     </main>
   );
 }
