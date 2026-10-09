@@ -12,18 +12,18 @@ export type Udhetim = {
 
 export async function lexoUdhetimet(): Promise<Udhetim[]> {
   const sql = getSql();
-  const rows = await sql`
+  const rows = await sql
     SELECT id, nisja, destinacioni, ora, vendtakimi, vende
     FROM udhetimet ORDER BY id
-  `;
+  ;
   return rows as Udhetim[];
 }
 
 export async function gjejUdhetimin(id: string): Promise<Udhetim | undefined> {
   const sql = getSql();
-  const rows = await sql`
+  const rows = await sql
     SELECT id, nisja, destinacioni, ora, vendtakimi, vende
-    FROM udhetimet WHERE id = ${id}
-  `;
+    FROM udhetimet WHERE id = \
+  ;
   return rows[0] as Udhetim | undefined;
 }
