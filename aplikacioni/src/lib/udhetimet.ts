@@ -1,5 +1,5 @@
 import "server-only";
-import { getSql } from "./db";
+import { sql } from "./db";
 
 export type Udhetim = {
   id: string;
@@ -11,19 +11,20 @@ export type Udhetim = {
 };
 
 export async function lexoUdhetimet(): Promise<Udhetim[]> {
-  const sql = getSql();
   const rows = await sql`
-    SELECT id, nisja, destinacioni, ora, vendtakimi, vende
-    FROM udhetimet ORDER BY id
+    SELECT id::text, nisja, destinacioni, ora, vendtakimi, vende
+    FROM udhetimet
+    ORDER BY ora ASC
   `;
   return rows as Udhetim[];
 }
 
-export async function gjejUdhetimin(id: string): Promise<Udhetim | undefined> {
-  const sql = getSql();
+export async function gjejUdhetimin(id: string): Promise<Udhetim | null> {
   const rows = await sql`
-    SELECT id, nisja, destinacioni, ora, vendtakimi, vende
-    FROM udhetimet WHERE id = ${id}
+    SELECT id::text, nisja, destinacioni, ora, vendtakimi, vende
+    FROM udhetimet
+    WHERE id = ${id}
+    LIMIT 1
   `;
-  return rows[0] as Udhetim | undefined;
+  return (rows[0] as Udhetim) || null;
 }
