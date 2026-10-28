@@ -22,3 +22,24 @@ Do të shtojmë formularin për krijimin dhe rezervimin e udhëtimeve reale dire
 
 ## Ndihma nga AI
 AI më ndihmoi të konfiguroj lidhjen me `@neondatabase/serverless` dhe të shkruaj query-t SQL.
+## Rezultatet e provave
+
+### Prova 1 - Ndryshimi i ores
+Ndryshova oren e udhetimit me ID 2 ne Neon nga 08:15 ne 08:25.
+Kontrollova ndryshimin ne aplikacion.
+Pas testimit, e riktheva oren ne 08:15.
+Rezultati: Prova u realizua.
+
+### Prova 2 - Lista bosh
+Shtova perkohesisht WHERE false ne pyetjen SQL.
+Aplikacioni shfaqi mesazhin "Nuk ka udhetime per momentin."
+E riktheva kodin dhe u shfaqen perseri 3 udhetimet.
+Rezultati: Prova u realizua.
+
+### Prova 3 - Nderprerja e lidhjes
+Ndryshova perkohesisht emrin e DATABASE_URL.
+Fillimisht Next.js shfaqi nje gabim.
+Pas ndryshimit te perkohshem te trajtimit te lidhjes,
+aplikacioni shfaqi mesazhin "Nuk u lidhem me databazen. Provo perseri."
+Riktheva lidhjen dhe u shfaqen perseri 3 udhetimet.
+Rezultati: Prova u realizua.

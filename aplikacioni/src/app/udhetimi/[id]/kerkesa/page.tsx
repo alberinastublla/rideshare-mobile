@@ -1,6 +1,6 @@
 ﻿import Link from "next/link";
 import { notFound } from "next/navigation";
-import { gjejUdhetimin } from "../../../../lib/udhetimet";
+import { gjejUdhetimin } from "@/lib/udhetimet";
 
 export const dynamic = "force-dynamic";
 
@@ -9,6 +9,7 @@ export default async function Kerkesa({
 }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   let udhetim;
+
   try {
     udhetim = await gjejUdhetimin(id);
   } catch {
@@ -20,6 +21,7 @@ export default async function Kerkesa({
       </main>
     );
   }
+
   if (!udhetim) notFound();
 
   return (
