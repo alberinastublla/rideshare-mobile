@@ -32,17 +32,17 @@ Pas: https://github.com/alberinastublla/rideshare-mobile/commit/d74d215269f0f710
 ## Provat që bëra
 ### Prova 1
 Hapat: Hapa listen e udhetimeve, pastaj udhetimin me ID 2 dhe klikova "Kerko vend".
-Pritshmeria: Te shfaqen detajet e udhetimit te zgjedhur dhe kerkesa te jete vetem simulim.
-Vezhgimi: U shfaq Fushe Kosove - AAB, ora 08:15, me 1 vend te lire. Pas klikimit u shfaq "Simulim: Ne pritje" dhe sqarimi qe kerkesa nuk u dergua te shoferi.
+Pritshmëria: Te shfaqen detajet e udhetimit te zgjedhur dhe kerkesa te jete vetem simulim.
+Vëzhgimi: U shfaq Fushe Kosove - AAB, ora 08:15, me 1 vend te lire. Pas klikimit u shfaq "Simulim: Ne pritje" dhe sqarimi qe kerkesa nuk u dergua te shoferi.
 ### Prova 2
 Hapat: Hapa /udhetimi/999 para dhe pas korrigjimit.
-Pritshmeria: Te shfaqet nje mesazh i qarte kur udhetimi nuk ekziston dhe nje lidhje per kthim te lista.
-Vezhgimi: Para korrigjimit shfaqej gabimi standard 404 ne anglisht. Pas korrigjimit u shfaq "Udhetimi nuk u gjet" dhe lidhja "Kthehu te lista". E klikova lidhjen dhe lista me tri udhetime u hap me sukses.
+Pritshmëria: Te shfaqet nje mesazh i qarte kur udhetimi nuk ekziston dhe nje lidhje per kthim te lista.
+Vëzhgimi: Para korrigjimit shfaqej gabimi standard 404 ne anglisht. Pas korrigjimit u shfaq "Udhetimi nuk u gjet" dhe lidhja "Kthehu te lista". E klikova lidhjen dhe lista me tri udhetime u hap me sukses.
 
 ### Prova 3
 Hapat: Hapa udhetimin me ID 3, Lipjan - AAB, qe kishte 0 vende te lira.
-Pritshmeria: Aplikacioni te mos lejoje kerkese per vend kur nuk ka vende te lira.
-Vezhgimi: U shfaq mesazhi "Nuk ka vende te lira" dhe butoni ishte i caktivizuar. Aplikacioni nuk premtoi rezervim.
+Pritshmëria: Aplikacioni te mos lejoje kerkese per vend kur nuk ka vende te lira.
+Vëzhgimi: U shfaq mesazhi "Nuk ka vende te lira" dhe butoni ishte i caktivizuar. Aplikacioni nuk premtoi rezervim.
 
 ## Ndryshimi i ri
 Si hyrje tjeter provova udhetimin me ID 3, Lipjan - AAB, me 0 vende te lira.
@@ -54,3 +54,4 @@ Kete prove e bera vete; demonstrimi para kolegut nuk eshte kryer ende.
 Perdora ChatGPT per udhezime teknike, shembullin e parashikimit, krijimin e kodit te faqes 404 dhe dokumentimin e provave.
 Vete kontrollova aplikacionin ne shfletues, testova ID 2, ID 999 dhe udhetimin me 0 vende.
 Verifikova qe korrigjimi funksionon dhe lidhja kthen perdoruesin te lista.
+
