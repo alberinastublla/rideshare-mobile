@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import Vendndodhja from "./Vendndodhja";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { gjejUdhetimin } from "@/lib/udhetimet";
 
@@ -31,7 +32,8 @@ export default async function Kerkesa({
         <>
           <h1>Simulim: Në pritje</h1>
           <p>Kërkesa për {udhetim.nisja} nuk është dërguar te shoferi.</p>
-          <p>Ruajtjen dhe konfirmimin real do t’i shtojmë më vonë.</p>
+          <p>Ruajtjen dhe konfirmimin real do t'i shtojmë më vonë.</p>
+          <Vendndodhja />
         </>
       ) : (
         <h1>Nuk ka vende të lira.</h1>
