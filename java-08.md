@@ -64,3 +64,15 @@ Komanda npm run build perfundoi me sukses. U shfaq nje paralajmerim CSS per @the
 Perdora ChatGPT per udhezime teknike, implementimin e komponentit Vendndodhja, zgjidhjen e gabimeve dhe dokumentimin e provave.
 
 Testet u realizuan dhe rezultatet u verifikuan ne aplikacion.
+
+## Prova me nje hyrje te re
+
+**Hyrja qe provova:** Shkrova "Biblioteka" dhe e konfirmova. Pastaj shkrova "Parkingu" pa e konfirmuar. Ne fund provova konfirmimin me fushe bosh.
+
+**Parashikimi im para klikimit:** Vendtakimi i konfirmuar duhet te mbetet "Biblioteka" derisa te konfirmohet nje vendtakim tjeter. Fusha bosh duhet te shfaqe gabim.
+
+**Cfare pashe realisht:** "Biblioteka" mbeti e konfirmuar. Kur provova fushen bosh, u shfaq mesazhi "Shkruaj nje vendtakim para konfirmimit." dhe zgjedhja e meparshme nuk u fshi.
+
+**Skedari dhe funksioni qe e shpjegojne:** src/app/udhetimi/[id]/kerkesa/Vendndodhja.tsx, funksioni konfirmoVendtakimin.
+
+**Cfare kuptova ose korrigjova:** Vendtakimi duhet te ndryshoje vetem pas konfirmimit. Shtova kontrollin per tekst bosh dhe ruajtjen e vendtakimit te konfirmuar.
