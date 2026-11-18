@@ -1,4 +1,4 @@
-﻿# Java 8 – Vendndodhja
+# Java 8 – Vendndodhja
 
 ## Projekti
 RideShare Mobile
@@ -65,14 +65,21 @@ Perdora ChatGPT per udhezime teknike, implementimin e komponentit Vendndodhja, z
 
 Testet u realizuan dhe rezultatet u verifikuan ne aplikacion.
 
-## Prova me nje hyrje te re
+## Prova me një hyrje të re
 
-**Hyrja qe provova:** Shkrova "Biblioteka" dhe e konfirmova. Pastaj shkrova "Parkingu" pa e konfirmuar. Ne fund provova konfirmimin me fushe bosh.
+### Hyrja që provova
+Shkrova "Biblioteka" dhe klikova "Konfirmo vendtakimin". Pastaj shkrova "Parkingu" pa klikuar konfirmimin. Në fund e zbraza fushën dhe provova konfirmimin me hapësira.
 
-**Parashikimi im para klikimit:** Vendtakimi i konfirmuar duhet te mbetet "Biblioteka" derisa te konfirmohet nje vendtakim tjeter. Fusha bosh duhet te shfaqe gabim.
+### Parashikimi im para klikimit
+Vendtakimi i konfirmuar duhet të mbetet "Biblioteka" derisa të konfirmohet një vendtakim tjetër. Hyrja bosh duhet të shfaqë gabim.
 
-**Cfare pashe realisht:** "Biblioteka" mbeti e konfirmuar. Kur provova fushen bosh, u shfaq mesazhi "Shkruaj nje vendtakim para konfirmimit." dhe zgjedhja e meparshme nuk u fshi.
+### Çfarë pashë realisht
+"Biblioteka" mbeti e konfirmuar edhe pasi ndryshova tekstin pa e konfirmuar. Kur provova hyrjen bosh, u shfaq mesazhi "Shkruaj një vendtakim para konfirmimit." Vendtakimi i mëparshëm nuk u fshi.
 
-**Skedari dhe funksioni qe e shpjegojne:** src/app/udhetimi/[id]/kerkesa/Vendndodhja.tsx, funksioni konfirmoVendtakimin.
+### Skedari dhe funksioni që e shpjegojnë
+Skedari: `src/app/udhetimi/[id]/kerkesa/Vendndodhja.tsx`
 
-**Cfare kuptova ose korrigjova:** Vendtakimi duhet te ndryshoje vetem pas konfirmimit. Shtova kontrollin per tekst bosh dhe ruajtjen e vendtakimit te konfirmuar.
+Funksioni: `konfirmoVendtakimin`
+
+### Çfarë kuptova ose korrigjova
+Kuptova që vendtakimi duhet të ndryshojë vetëm pas konfirmimit. Shtova kontrollin për hyrje bosh dhe ruajtjen e vendtakimit të mëparshëm.
