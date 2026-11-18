@@ -67,19 +67,8 @@ Testet u realizuan dhe rezultatet u verifikuan ne aplikacion.
 
 ## Prova me një hyrje të re
 
-### Hyrja që provova
-Shkrova "Biblioteka" dhe klikova "Konfirmo vendtakimin". Pastaj shkrova "Parkingu" pa klikuar konfirmimin. Në fund e zbraza fushën dhe provova konfirmimin me hapësira.
-
-### Parashikimi im para klikimit
-Vendtakimi i konfirmuar duhet të mbetet "Biblioteka" derisa të konfirmohet një vendtakim tjetër. Hyrja bosh duhet të shfaqë gabim.
-
-### Çfarë pashë realisht
-"Biblioteka" mbeti e konfirmuar edhe pasi ndryshova tekstin pa e konfirmuar. Kur provova hyrjen bosh, u shfaq mesazhi "Shkruaj një vendtakim para konfirmimit." Vendtakimi i mëparshëm nuk u fshi.
-
-### Skedari dhe funksioni që e shpjegojnë
-Skedari: `src/app/udhetimi/[id]/kerkesa/Vendndodhja.tsx`
-
-Funksioni: `konfirmoVendtakimin`
-
-### Çfarë kuptova ose korrigjova
-Kuptova që vendtakimi duhet të ndryshojë vetëm pas konfirmimit. Shtova kontrollin për hyrje bosh dhe ruajtjen e vendtakimit të mëparshëm.
+- Hyrja që provova: Shkrova "Biblioteka" dhe e konfirmova. Pastaj shkrova "Parkingu" pa konfirmim. Në fund provova vetëm hapësira dhe klikova Konfirmo vendtakimin.
+- Parashikimi im para klikimit: Vendtakimi i konfirmuar duhet të mbetet "Biblioteka". Teksti vetëm me hapësira duhet të shfaqë gabim.
+- Çfarë pashë realisht: "Biblioteka" mbeti e konfirmuar. U shfaq mesazhi "Shkruaj një vendtakim para konfirmimit." dhe zgjedhja e mëparshme nuk u fshi.
+- Skedari dhe funksioni që e shpjegojnë: `src/app/udhetimi/[id]/kerkesa/Vendndodhja.tsx`, funksioni `konfirmoVendtakimin`.
+- Çfarë kuptova ose korrigjova: Vendtakimi ndryshon vetëm pas konfirmimit. Shtova kontrollin për hyrje bosh dhe ruajtjen e zgjedhjes së mëparshme.
